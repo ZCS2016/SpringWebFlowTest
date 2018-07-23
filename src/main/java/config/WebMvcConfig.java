@@ -45,6 +45,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
     public FlowHandlerAdapter flowHandlerAdapter() {
         FlowHandlerAdapter handlerAdapter = new FlowHandlerAdapter();
         handlerAdapter.setFlowExecutor(this.webFlowConfig.flowExecutor());
+        handlerAdapter.setSaveOutputToFlashScopeOnRedirect(true);
         return handlerAdapter;
     }
 

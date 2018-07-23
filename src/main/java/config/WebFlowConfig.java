@@ -1,6 +1,5 @@
 package config;
 
-import flow.handler.LoginFlowHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.webflow.config.AbstractFlowConfiguration;
@@ -31,10 +30,5 @@ public class WebFlowConfig extends AbstractFlowConfiguration {
 				.setDevelopmentMode(true)
 				.build();
 	}
-
-	@Bean(name="login")
-    public LoginFlowHandler loginFlowHandler(){
-	    return new LoginFlowHandler();
-    }
 
 }

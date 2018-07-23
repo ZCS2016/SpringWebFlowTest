@@ -1,10 +1,4 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: ZCS
-  Date: 2018/7/23
-  Time: 10:57
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -12,5 +6,8 @@
 </head>
 <body>
     <h1>Welcome</h1>
+    <form:form modelAttribute="user">
+        <form:input type="text" path="name"/>
+    </form:form>
 </body>
 </html>

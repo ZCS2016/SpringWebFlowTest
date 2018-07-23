@@ -6,8 +6,8 @@
 </head>
 <body>
     <h1>Index</h1>
-    <form:form action="${flowExecutionUrl}">
-        <input type="text" name="name">
+    <form:form modelAttribute="user">
+        <form:input type="text" path="name"/>
         <input type="submit" name="_eventId_submit" value="OK">
         <input type="submit" name="_eventId_cancel" value="Cancel">
     </form:form>
